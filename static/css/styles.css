@@ -1,0 +1,94 @@
+body {
+    font-family: 'Ubuntu',sans-serif;
+    margin: 0;
+    padding: 0 auto;
+}
+
+h1 {
+        font-size: 2.5rem;
+        padding: 0 auto;
+        margin: 0 auto;
+}
+
+.container {
+
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+
+.container-nav {
+        display: flex;
+        justify-content: space-between;
+}
+
+
+.b-title {
+    text-align: center;
+    color: #143774;
+    font-family: 'Lora', serif;
+    font-size: 3.375rem;
+}
+
+.b-subtitle {
+    color: #1792D2;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+nav ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    padding: 0;
+    /* 沒有margin 時 會導致 li 項目前都靠在最上方，雖有用align or justify-contenet 但作用在 UL身上沒有用 ，不知還有沒有其他解法 */
+
+    margin: 2rem 0;
+    list-style: none;
+  
+
+}
+
+nav li {
+    /* border: 2px magenta solid;*/
+    margin: 0 1rem;  
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+a:hover, 
+a:focus {
+        color: #1792d2;
+        
+}
+
+nav a.focus-page {
+    border-bottom: 2px gray  solid;
+}
+
+@media screen and (max-width: 675px) {
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav ul {
+        /* display: inline-block */ /* 使用inline-block連同parent 中的div/ul 都會被算進去空間 造成 外觀看起來留很多空*/
+        display: inline;
+        padding: 0.5em 0;
+    }
+
+    nav li {
+        padding: 0.3em 0; 
+        text-align: center;
+    }
+}
