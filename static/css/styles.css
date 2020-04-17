@@ -1,3 +1,5 @@
+/* layout */
+
 body {
     font-family: 'Ubuntu',sans-serif;
     margin: 0;
@@ -10,16 +12,19 @@ h1 {
         margin: 0 auto;
 }
 
-.container {
+/* Header */
+header {
+    background: rgb(227, 243, 243);
+}
 
+.container {
     margin: 0 auto;
-    max-width: 900px;
     width: 90%;
 }
 
 .container-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
 }
 
 
@@ -73,6 +78,57 @@ a:focus {
 nav a.focus-page {
     border-bottom: 2px gray  solid;
 }
+
+
+/* main-blog */
+
+    section {
+        display: flex;
+        color: #707070;
+
+    }
+    .main-blog {
+            width: 45%;
+            margin: 0 1rem 0 10%;
+            padding: 0 1rem;
+    }
+    .main-feature-post {
+            border:2px blue solid;
+    }
+    .mfp-title {
+            font-family:'Lora',serif;
+            
+    }
+    .mfp-info {
+            font-size: 0.875rem;
+            font-family: 'Ubuntu',sans-serif;
+            font-weight: 300;
+    }
+
+    .mfp-image{
+            width: 100%;
+    }
+    .mfp-text {
+            font-size: 1.125 rem;
+            font-family: 'Ubuntu',sans-serif;
+            font-weight: 300;
+    }
+    .mfp-readmore {
+            font-size: 0.875rem;
+            font-family: 'Ubuntu',sans-serif;
+            font-weight: 700;
+    }
+    .mfp-readmore a {  text-decoration: none; }
+
+/* asid-blog */
+
+    .aside-blog {
+        width: 15%;
+        border:2px #d88c8c solid;
+        padding: 0 4rem 0 0;
+    }
+
+/* for Mobile Screen */
 
 @media screen and (max-width: 675px) {
     .container {

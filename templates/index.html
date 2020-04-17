@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=" {{ url_for('static',filename='css/styles.css') }}">
+    <!--Loading Google font from online not store in local.-->
      <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
     <title>Living the simple life</title>
 </head>
@@ -11,7 +12,7 @@
 <header>
 <div class="container container-nav">
         <div class="b-title">
-            <h1>Living the simple life</h1>
+            <h1>活在簡單</h1>
             <p class="b-subtitle">A BLOG EXPLORING MINIMALISM IN LIFE</p>
         </div>
         <nav>   
@@ -23,6 +24,72 @@
         </nav>
 </div>
 </header>
+<section>
+    <div class="main-blog">
+        <div class="main-feature-post">
+            <div class="mfp-title">
+                <h3>找尋最簡單的生活</h3>
+            </div>
+            <div class="mfp-info">
+                <span>Aug 29,2019/ 2 comments</span>
+            </div>
+            <div class="mfp-image">
+                <img src="{{ url_for('static',filename='images/featured-img.jpg') }}" alt="好看的圖" style="width: 100%; height: 240px;">
+            </div>
+            <p class="mfp-text">
+                可能是因為從小的學習歷程，我總是被提醒自己距離「一百分」還差幾分。我還記得小學三四年級吧，有一次段考國文 99 分，因為一個造句中的錯字（「的」跟「得」沒有寫對），差這 1 分，讓我那天放學回家哭得好慘。
+            </p>
+            <div class="mfp-readmore">
+                <span><a href="#">更多內容</a></span>
+            </div>
+        <hr>
+        </div>
+        <div class="main-recent-post">
+            <div>
+                <div class="main-recent-post-title"></div>
+                <div class="main-recent-post-text"></div>
+                <div class="mfp-readmor"></div>
+                <div class="mfp-info"></div>
+            </div>
+            <div>
+                <div class="main-recent-post-title"></div>
+                <div class="main-recent-post-text"></div>
+                <div class="mfp-readmor"></div>
+                <div class="mfp-info"></div>
+            </div>
+            <div>
+                <div class="main-recent-post-title"></div>
+                <div class="main-recent-post-text"></div>
+                <div class="mfp-readmor"></div>
+                <div class="mfp-info"></div>
+            </div>
+        </div>
+    </div>
+    <div class="aside-blog">
+        <div class="aside-aboutme">
+            <div class="aside-aboutme-title">
 
+            </div>
+            <div class="aside-aboutme-image">
+
+            </div>
+            <p class="aside-aboutme-text"></p>
+        </div>
+        <div class="aside-recent-post">
+            <div class="aside-recent-title"></div>
+            <div class="aside-recent-image">
+                <p class="aside-recent-text"></p>
+            </div>
+            <div class="aside-recent-image">
+                <p class="aside-recent-text"></p>
+            </div>
+            <div class="aside-recent-image">
+                <p class="aside-recent-text"></p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
 </body>
 </html>
