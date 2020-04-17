@@ -97,6 +97,7 @@ nav a.focus-page {
     }
     .mfp-title {
             font-family:'Lora',serif;
+            margin: 0 auto;
             
     }
     .mfp-info {
@@ -119,6 +120,12 @@ nav a.focus-page {
             font-weight: 700;
     }
     .mfp-readmore a {  text-decoration: none; }
+
+    .main-recent-post {}
+    .main-recent-main {}
+    .main-recent-secondary {}
+    .mrp-title {}
+    .mrp-text {}
 
 /* asid-blog */
 
