@@ -91,48 +91,89 @@ nav a.focus-page {
             width: 45%;
             margin: 0 1rem 0 10%;
             padding: 0 1rem;
+            font-family: 'Ubuntu',sans-serif;
+            font-weight: 300;
     }
     .main-feature-post {
-            border:2px blue solid;
+            padding-bottom: 1rem;
+            border-bottom: 2px #707070 solid;
+           /* border:2px blue solid; */
     }
+
     .mfp-title {
             font-family:'Lora',serif;
             margin: 0 auto;
             
     }
     .mfp-info {
-            font-size: 0.875rem;
-            font-family: 'Ubuntu',sans-serif;
-            font-weight: 300;
+            font-size: 0.875rem;     
     }
 
     .mfp-image{
-            width: 100%;
+            max-width: 100%;
+            display: block;
     }
     .mfp-text {
             font-size: 1.125 rem;
-            font-family: 'Ubuntu',sans-serif;
-            font-weight: 300;
     }
     .mfp-readmore {
             font-size: 0.875rem;
-            font-family: 'Ubuntu',sans-serif;
             font-weight: 700;
+            color: #1792D2;
     }
+
     .mfp-readmore a {  text-decoration: none; }
 
-    .main-recent-post {}
-    .main-recent-main {}
-    .main-recent-secondary {}
-    .mrp-title {}
+    /* 主區 下方三篇文章 */
+    .main-recent-post {
+        display: flex;
+        margin: 1rem auto;
+    }
+    .main-recent-main {
+        max-width: 70%;
+
+    }
+    .main-recent-secondary {
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .mrp-image {
+            max-width: 100%;
+            display:block;
+    }
+
+    .mrp-title {
+            margin: 0 auto;
+            padding: 0;
+            font-family: '思源宋體',sans-serif;
+            font-size: 1.5rem;
+    }
+
     .mrp-text {}
 
 /* asid-blog */
 
     .aside-blog {
+        display: flex;
+        flex-direction: column;
         width: 15%;
-        border:2px #d88c8c solid;
-        padding: 0 4rem 0 0;
+        margin: 0 2rem 0 1rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .aside-aboutme,
+    .aside-recent-post {
+            border: 0.75rem rgb(227, 243, 243) solid;
+            margin: 0.75rem 0;
+            padding: 0.25rem 0.5rem;
+    }
+
+    .aside-aboutme-image,
+    .aside-recent-image {
+            display: block;
+            max-width: 100%;
     }
 
 /* for Mobile Screen */
@@ -154,4 +195,17 @@ nav a.focus-page {
         padding: 0.3em 0; 
         text-align: center;
     }
+
+    section {
+        flex-direction: column;
+    }
+    .main-blog,
+    .aside-blog {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    
 }

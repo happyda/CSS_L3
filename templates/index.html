@@ -29,72 +29,63 @@
         <article class="main-feature-post">
             <h3 class="mfp-title">找尋最簡單的生活</h3>
             <p class="mfp-info">Aug 29,2019/ 2 comments</p>
-            <div class="mfp-image">
-                <img src="{{ url_for('static',filename='images/featured-img.jpg') }}" alt="好看的圖" style="width: 100%; height: 240px;">
-            </div>
+            <img src="{{ url_for('static',filename='images/featured-img.jpg') }}" alt="好看的圖" class="mfp-image">
             <p class="mfp-text">
                 可能是因為從小的學習歷程，我總是被提醒自己距離「一百分」還差幾分。我還記得小學三四年級吧，有一次段考國文 99 分，因為一個造句中的錯字（「的」跟「得」沒有寫對），差這 1 分，讓我那天放學回家哭得好慘。
             </p>
             <a href="#" class="mfp-readmore">更多內容</a>
-        <hr>
         </article>
         <article class="main-recent-post">
             <div class="main-recent-main">
-                <h4 class="mrp-title"></h4>
-                <p class="mrp-text"></p>
-                 <p class="mfp-readmore"></p>
+                <h4 class="mrp-title">第一篇文章</h4>
+                <p class="mrp-text">粉專「海巡署長室 Coast Guard」今日在臉書PO出一張手掌照片，並表示「這雙滿是乾裂、破皮的手，是一位護理師的手」。粉專表示，這四個多月來的疫情轟炸，真的讓醫護人員身心俱疲。前陣子曾經發生有餐飲業者拒送餐到醫院的事件，但其實醫護人員比誰都害怕有病毒會殘留在身上，意外成為病毒傳播者。長時間暴露在高風險環境中，醫護人員每天都要「洗上百次的手」，這幾乎是一般人整個月的份。</p>
+                 <p class="mfp-readmore"><a href="#">更多內容</a></p>
             </div>
-            <div class="main-recent-secondary"></div>
-                <img src="" alt="" class="mrp-image">
-                <p class="mfp-info">Aug 29,2019/ 2 comments</p>
-            </div>
-        </article>
-        <article class="main-recent-post">
-            <div class="main-recent-main">
-                <h4 class="mrp-title"></h4>
-                <p class="mrp-text"></p>
-                 <p class="mfp-readmore"></p>
-            </div>
-            <div class="main-recent-secondary"></div>
-                <img src="" alt="" class="mrp-image">
-                <p class="mfp-info">Aug 29,2019/ 2 comments</p>
+            <div class="main-recent-secondary">
+                <img src="{{ url_for('static',filename='images/dumpling.jpg')}}" alt="三顆水餃圖" class="mrp-image">
+                <p class="mfp-info">Aug 29,2020/ 1 comment</p>
             </div>
         </article>
         <article class="main-recent-post">
             <div class="main-recent-main">
-                <h4 class="mrp-title"></h4>
-                <p class="mrp-text"></p>
-                 <p class="mfp-readmore"></p>
+                <h4 class="mrp-title">第二篇文章</h4>
+                <p class="mrp-text">中央流行疫情指揮中心4月初宣布全面禁止探病。一名今年住進護理中心的女性長者，原本五名子女排班天天照顧，因應疫情實施限制措施，原本病況穩定的她不到十天突然陷入昏迷，送醫不久後離世，上演防疫悲歌。</p>
+                 <p class="mfp-readmore"><a href="#">更多內容</a></p>
             </div>
-            <div class="main-recent-secondary"></div>
-                <img src="" alt="" class="mrp-image">
-                <p class="mfp-info">Aug 29,2019/ 2 comments</p>
+            <div class="main-recent-secondary">
+                <img src="{{ url_for('static',filename='images/chair.jpg')}}" alt="椅子圖" class="mrp-image">
+                <p class="mfp-info">Aug 29,2019/ 0 comment</p>
+            </div>
+        </article>
+        <article class="main-recent-post">
+            <div class="main-recent-main">
+                <h4 class="mrp-title">第三篇文章</h4>
+                <p class="mrp-text">不過楊志良對台灣防疫非常有信心，因為台灣有好的體制，人民也保持高度警覺心。他直指自己清明節還和別人打賭，不認為疫情會因此大爆發，而他判斷的原因有二，一個是景點都是開放空間，其二則是陽光是最好殺病毒的利器，「所以我走在路上只要不是群聚，陽光底下我絕不戴口罩！」</p>
+                 <p class="mfp-readmore"><a href="#">更多內容</a></p>
+            </div>
+            <div class="main-recent-secondary">
+                <img src="{{ url_for('static',filename='images/leaf.jpg') }}" alt="" class="mrp-image">
+                <p class="mfp-info">Oct 10,2017/ 8 comments</p>
             </div>
         </article>
     </main>
-    
+
     <div class="aside-blog">
-        <div class="aside-aboutme">
-            <div class="aside-aboutme-title">
-
-            </div>
-            <div class="aside-aboutme-image">
-
-            </div>
-            <p class="aside-aboutme-text"></p>
-        </div>
-        <div class="aside-recent-post">
-            <div class="aside-recent-title"></div>
-            <div class="aside-recent-image">
-                <p class="aside-recent-text"></p>
-            </div>
-            <div class="aside-recent-image">
-                <p class="aside-recent-text"></p>
-            </div>
-            <div class="aside-recent-image">
-                <p class="aside-recent-text"></p>
-            </div>
-        </div>
+        <article class="aside-aboutme">
+            <h4 class="aside-aboutme-title">關於我</h4>
+            <img src="{{ url_for('static',filename='images/author.jpg')}}"  class="aside-aboutme-image"> 
+            <p class="aside-aboutme-text">政大國貿畢。雖未走上貿易這條路，但卻開了一家麥可故事貿易公司，用文字寫下隱藏在我們身邊每個獨一無二的職場故事。
+這主題的誕生，來自於轉職時，認識許多人的職涯故事都是曲折且獨特，而不再只是在學校所聽聞職涯中心、學長姊回娘家講座那些一帆風順的成功故事。 這才意識到原來挫折與不如意才是大家的職涯常態。</p>
+        </article>
+        <article class="aside-recent-post">
+            <h4 class="aside-recent-title">最近文章</h4>
+            <img src="{{ url_for('static',filename='images/dumpling.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">偵邊第一篇</p>
+             <img src="{{ url_for('static',filename='images/chair.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">側邊第二篇</p>
+             <img src="{{ url_for('static',filename='images/leaf.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">側邊第三篇</p>
+        </article>
 
 
     </div>
