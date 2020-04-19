@@ -8,8 +8,8 @@ body {
 
 h1, h2 {
         font-size: 2.5rem;
-        padding: 0 auto;
-        margin: 0 auto;
+        margin: 0;
+        padding: 1em auto;
 }
 
 /* Header */
@@ -20,7 +20,7 @@ header {
 .container {
     margin: 0 auto;
     width: 90%;
-    max-width: 900px;
+    max-width: 1024px;
 }
 
 .container-nav {
@@ -96,38 +96,53 @@ nav a.focus-page {
             font-weight: 300;
     }
     .main-feature-post {
-            padding-bottom: 1rem;
+            display:flex;
+            flex-direction: column;
             border-bottom: 2px #707070 solid;
-           /* border:2px blue solid; */
-           margin: 0 auto;   
-           padding: 0;     
+            margin: 0 auto;  
+            padding-bottom: 0.5em;
     }
 
     .mfp-title {
             font-family:'Lora',serif;
+            order: 3;
+            margin: -0.75em 0 0 0;
+
     }
 
     .mfp-info {
             font-size: 0.875rem;
             margin-top: 0;
+            order: 2;
+            text-align: right;
     }
 
     .mfp-image{
             max-width: 100%;
             display: block;
+            order: 1;
+            margin: 0;
     }
 
     .mfp-text {
-            font-size: 1.125 rem;   
+            font-size: 1.125 rem;
+            margin-bottom: 0.25em; 
+            order: 4;
     }
 
     .mfp-readmore {
             font-size: 0.875rem;
             font-weight: 700;
             color: #1792D2;
+            order: 5
     }
+    
 
-    .mfp-readmore a {  text-decoration: none; }
+    .mfp-readmore>a:hover,a:focus 
+    {  
+        text-decoration: none;
+        color: #1792d2;
+    }
 
     /* 主區 下方三篇文章 */
     .main-recent-post {
@@ -171,6 +186,7 @@ nav a.focus-page {
         margin: 0 2rem 0 1rem;
         padding: 0 1rem;
         text-align: center;
+        min-width: 200px;
     }
     .aside-aboutme,
     .aside-recent-post {
@@ -185,6 +201,25 @@ nav a.focus-page {
             max-width: 100%;
     }
 
+    .aside-recent-image+p {
+            padding-bottom: 2em;
+    }
+    .aside-recent-text {
+        border-bottom: 1px #707070 solid;
+    }
+
+    .aside-recent-text:last-child {
+        border-bottom: 0;
+        padding-bottom: 0.25em;
+    }
+
+/* Footer */
+    footer {
+        background:rgb(227, 243, 243);;
+        color: #143774;
+        text-align: center;
+        padding: 0.25em;
+    }
 /* for Mobile Screen */
 
 @media screen and (max-width: 760px) {
@@ -226,8 +261,9 @@ nav a.focus-page {
     .main-recent-secondary {
         width: 100%;
     }
-    .mrp-title {
-        margin-top: -1.0rem;
+
+    .mfp-image {
+        margin-bottom: 0.5em;
     }
 
     .mfp-info {
@@ -235,5 +271,7 @@ nav a.focus-page {
         margin-bottom: 0.3rem;
         text-align: right;
     }
-
+    .mfp-title {
+        margin: 0.25em auto;
+    }
 }

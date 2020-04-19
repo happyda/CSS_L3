@@ -26,15 +26,16 @@
 </header>
 <section>
     <main class="main-blog">
-        <article class="main-feature-post">
-            <h2 class="mfp-title">找尋最簡單的生活</h2>
-            
-            <img src="{{ url_for('static',filename='images/featured-img.jpg') }}" alt="好看的圖" class="mfp-image">
-            <p class="mfp-info">Aug 29,2019/ 2 comments</p>
-            <p class="mfp-text">
-                可能是因為從小的學習歷程，我總是被提醒自己距離「一百分」還差幾分。我還記得小學三四年級吧，有一次段考國文 99 分，因為一個造句中的錯字（「的」跟「得」沒有寫對），差這 1 分，讓我那天放學回家哭得好慘。
-            </p>
-            <a href="#" class="mfp-readmore">更多內容</a>
+        <article class="main-recent-post">
+            <div class="main-recent-main">
+                <h4 class="mrp-title">找尋最簡單的生活</h4>
+                <p class="mrp-text">可能是因為從小的學習歷程，我總是被提醒自己距離「一百分」還差幾分。我還記得小學三四年級吧，有一次段考國文 99 分，因為一個造句中的錯字（「的」跟「得」沒有寫對），差這 1 分，讓我那天放學回家哭得好慘。</p>
+                 <p class="mfp-readmore"><a href="#">更多內容</a></p>
+            </div>
+            <div class="main-recent-secondary">
+                <img src="{{ url_for('static',filename='images/featured-img.jpg') }}" alt="好看的圖" class="mrp-image">
+                <p class="mfp-info">Aug 29,2019/ 2 回應</p>
+            </div>
         </article>
         <article class="main-recent-post">
             <div class="main-recent-main">

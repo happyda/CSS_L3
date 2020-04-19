@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {{ url_for('static',filename='css/styles.css') }}">
+    <!--Loading Google font from online not store in local.-->
+     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Living the simple life</title>
+</head>
+<body>
+<header>
+<div class="container container-nav">
+        <div class="b-title">
+            <h1>活在簡單</h1>
+            <p class="b-subtitle">A BLOG EXPLORING MINIMALISM IN LIFE</p>
+        </div>
+        <nav>   
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="focus-page">HOME</a></li> 
+                <li><a href="{{ url_for('about_me') }}">About Me</a></li>
+                <li><a href="{{ url_for('recentpost') }}">Recent Post</a></li>
+            </ul>
+        </nav>
+</div>
+</header>
+<section>
+    <main class="main-blog">
+        <article class="main-feature-post">
+            <h2 class="mfp-title">我叫王小宇</h2>
+            
+            <img src="{{ url_for('static',filename='images/author.jpg') }}" alt="好看的圖" class="mfp-image">
+            <p class="mfp-text">
+                政大國貿畢。雖未走上貿易這條路，但卻開了一家麥可故事貿易公司，用文字寫下隱藏在我們身邊每個獨一無二的職場故事。
+這主題的誕生，來自於轉職時，認識許多人的職涯故事都是曲折且獨特，而不再只是在學校所聽聞職涯中心、學長姊回娘家講座那些一帆風順的成功故事。 這才意識到原來挫折與不如意才是大家的職涯常態。
+            </p>
+        </article>    
+    </main>
+
+    <div class="aside-blog">
+        <article class="aside-recent-post">
+            <h4 class="aside-recent-title">最近文章</h4>
+            <img src="{{ url_for('static',filename='images/dumpling.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">偵邊第一篇</p>
+             <img src="{{ url_for('static',filename='images/chair.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">側邊第二篇</p>
+             <img src="{{ url_for('static',filename='images/leaf.jpg')}}"  class="aside-recent-image"> 
+                <p class="aside-recent-text">側邊第三篇</p>
+        </article>
+    </div>
+</section>
+</body>
+<footer><p>王小宇路跑游泳活動有限公司</p>
+copyright © 2020 Starry Wang Running and Swimming Journey Co.,Ltd</footer>
+</html>
