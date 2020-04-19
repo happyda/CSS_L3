@@ -50,17 +50,13 @@ nav ul {
     /* justify-content: flex-end; */
     padding: 0;
     /* 沒有margin 時 會導致 li 項目前都靠在最上方，雖有用align or justify-contenet 但作用在 UL身上沒有用 ，不知還有沒有其他解法 */
-
     margin: 2rem 0;
     list-style: none;
-  
-
 }
 
 nav li {
     /* border: 2px magenta solid;*/
     margin: 0 1rem;  
-
 }
 
 nav a {
@@ -73,13 +69,11 @@ nav a {
 a:hover, 
 a:focus {
         color: #1792d2;
-        
 }
 
 nav a.focus-page {
     border-bottom: 2px gray  solid;
 }
-
 
 /* main-blog */
 
@@ -110,7 +104,6 @@ nav a.focus-page {
             font-family:'Lora',serif;
             order: 3;
             margin: -0.75em 0 0 0;
-
     }
 
     .mfp-info {
@@ -140,7 +133,6 @@ nav a.focus-page {
             order: 5
     }
     
-
     .mfp-readmore>a:hover,a:focus 
     {  
         text-decoration: none;
